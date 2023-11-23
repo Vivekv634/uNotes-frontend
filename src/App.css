@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,500;1,600&family=Magra:wght@400;700&family=Sarala:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+/* navbar css */
+.navbar {
+    background-color: #292929;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 10vh;
+    align-items: center;
+    margin: auto;
+    color: aliceblue;
+}
+
+.brand {
+    font-family: alegreya;
+    font-weight: 400;
+    font-size: 2rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: aliceblue;
+    font-family: sarala;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* input css */
+.inputLabel {
+    display: block;
+    font-family: magra;
+    font-weight: 600;
+    margin-top: 0.6rem;
+}
+
+.input input {
+    font-family: sarala;
+    font-size: 1.1rem;
+    width: 100%;
+    padding-left: .4rem;
+}
+
+/* signup and login css */
+.signup-container,
+.login-container {
+    display: flex;
+    box-shadow: 0 4px 10px 2px rgb(82, 82, 82);
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.signup .left img,
+.login .left img {
+    width: 450px;
+    margin: 2rem;
+}
+
+.signup .left,
+.login .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.signup .right,
+.login .right {
+    width: 50%;
+    padding: 2rem;
+}
+
+.signup .heading,
+.login .heading {
+    font-family: magra;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.signup .sub-heading,
+.login .sub-heading {
+    font-family: sarala;
+}
+
+.signup input[type=submit],
+.login input[type=submit] {
+    font-family: sarala;
+    background-color: rgb(123, 189, 184);
+    border: 1px solid rgb(123, 189, 184);
+    color: #fefefe;
+    padding: 0.2rem .5rem;
+    border-radius: .2rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.signup input[type=submit]:disabled,
+.login input[type=submit]:disabled {
+    cursor: not-allowed;
+    background-color: rgb(144, 194, 189);
+}
+
+.login-btn {
+    text-decoration: none;
+    color: rgb(123, 189, 184);
+    background-color: #fff;
+    font-family: sarala;
+    padding: 0.2rem .5rem;
+    margin-left: 0.5rem;
+    box-shadow: 0 0 20px 1px rgb(224, 224, 224);
+    border-radius: .2rem;
+    transition: all .2s ease;
+}
+
+.login-btn:hover {
+    box-shadow: 0 0 6px rgb(82, 82, 82);
+}
+
+.signup .error,
+.login .error {
+    height: 2ch;
+    margin: .5rem 0;
+    font-family: sarala;
+    color: rgb(243, 71, 71);
+}
+
+@media screen and (max-width:700px) {
+
+    .signup .left,
+    .login .left {
+        width: 100%;
+    }
+
+    .signup .left img,
+    .login .left img {
+        width: 300px;
+    }
+
+    .signup .right,
+    .login .right {
+        width: 90%;
+        padding: 0;
+    }
+
+    .signup-container,
+    .login-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* page not found css */
+.pagenotfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagenotfound img {
+    width: 300px;
+}
+
+/* notes dashboard css */
+.notes {
+    height: 90vh;
+    width: 100%;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.notes .add-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notes .loading,
+.notes .sub-heading {
+    font-family: sarala;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.notes .add-note img {
+    width: 300px;
+}
+
+.add-note-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(123, 189, 184);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* add note css */
+.add-note {
+    width: 80%;
+    margin: auto;
+}
+
+.add-note label {
+    display: block;
+    font-family: magra;
+    font-weight: 600;
+    margin-top: 0.6rem;
+}
+
+.add-note textarea {
+    width: 100%;
+    height: 40vh;
+    font-family: sarala;
+    padding: .2rem;
+    resize: vertical;
+    min-height: 10vh;
+}
+
+.add-note input[type='submit'],
+.add-note .cancel-btn,
+.add-note input[type='button'] {
+    background-color: rgb(123, 189, 184);
+    border: none;
+    padding: 0.5rem;
+    border-radius: .2rem;
+    color: #fefefe;
+    margin-top: 0.5rem;
+    font-family: sarala;
+}
+
+.add-note .cancel-btn,
+.add-note input[type='button']:last-child {
+    margin: 0 1rem;
+    background: white;
+    color: rgb(123, 189, 184);
+    border: 1px solid rgb(123, 189, 184);
+}
+
+.add-note .back-arrow {
+    font-family: sarala;
+    text-decoration: none;
+}
+
+/* note css */
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    width: fit-content;
+    min-width: 8rem;
+    max-width: 13rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
+}
+
+.note .note-title {
+    font-weight: 600;
+    font-family: magra;
+    font-size: 1.3rem;
+    text-wrap: wrap;
+}
+
+.note .note-body {
+    font-family: sarala;
+}
+
+.note .note-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note .edit-note,
+.note .delete-note {
+    cursor: pointer;
+}
+
+@media screen and (max-width:385px) {
+    .note {
+        min-width: 90%;
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+
+.home .home-content {
+    display: flex;
+}
+
+.home .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.home .right {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .heading {
+    font-family: sarala;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.home .home-link{
+    margin: 1rem 0;
+
+}
+.home .home-link .link {
+    background-color: #9949e3;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 30px;
+    font-family: magra;
+}
+
+.home .right img {
+    width: 300px;
+}
+
+@media screen and (max-width:925px) {
+    .home,
+    .navbar .nav-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .home .home-content {
+        display: block;
+    }
+
+    .home .left {
+        width: 100%;
+    }
+
+    .home .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
