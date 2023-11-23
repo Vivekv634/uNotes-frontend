@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uNotes-frontend/static/css/main.e0de2a99.css",
-    "main.js": "/uNotes-frontend/static/js/main.a9d1d55b.js",
+    "main.js": "/uNotes-frontend/static/js/main.d6ae862e.js",
     "static/media/home.svg": "/uNotes-frontend/static/media/home.866c2e5f91d9a45a68d7ebdc6ed0900e.svg",
     "static/media/signup.svg": "/uNotes-frontend/static/media/signup.e0760ca80f49f7fc96445600b6a5a838.svg",
     "static/media/login.svg": "/uNotes-frontend/static/media/login.dcc1b37e7d2aaaed6eb9a5d08751ac07.svg",
@@ -12,10 +12,10 @@
     "static/media/delete-note.svg": "/uNotes-frontend/static/media/delete-note.642da2f9203fed7e99a03988591b154e.svg",
     "static/media/add.svg": "/uNotes-frontend/static/media/add.3be0ea4ac64cead2bf9590910d375914.svg",
     "main.e0de2a99.css.map": "/uNotes-frontend/static/css/main.e0de2a99.css.map",
-    "main.a9d1d55b.js.map": "/uNotes-frontend/static/js/main.a9d1d55b.js.map"
+    "main.d6ae862e.js.map": "/uNotes-frontend/static/js/main.d6ae862e.js.map"
   },
   "entrypoints": [
     "static/css/main.e0de2a99.css",
-    "static/js/main.a9d1d55b.js"
+    "static/js/main.d6ae862e.js"
   ]
 }
