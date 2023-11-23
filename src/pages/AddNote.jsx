@@ -15,13 +15,13 @@ export default function AddNote() {
         if (result.error) {
             alert(result.error);
         } else {
-            window.location.assign('/notes');
+            window.location.assign('/uNotes-frontend/notes');
         }
     }
     
     return (
         <div className='add-note'>
-            <Link to='/notes' className='back-arrow'>&lsaquo; Notes</Link>
+            <Link to='/uNotes-frontend/notes' className='back-arrow'>&lsaquo; Notes</Link>
             <form onSubmit={handleSubmit} method="post">
                 <Input id='title' type='text' label='Note Title' required={true} value={title} handleValue={setTitle} />
                 <label htmlFor="body">Note Body</label>

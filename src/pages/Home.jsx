@@ -16,7 +16,7 @@ export default function Home() {
         <div className="left">
           <div className="heading">Effortless Productivity: Unleash Your Day with uNotes - Your Ultimate To-Do Companion!</div>
           <div className="home-link">
-            {cookie ? <Link to='/notes' className='link'>Go To DashBoard</Link> : <Link to='/signup' className='link'>Get Started</Link>}</div>
+            {cookie ? <Link to='/uNotes-frontend/notes' className='link'>Go To DashBoard</Link> : <Link to='/uNotes-frontend/signup' className='link'>Get Started</Link>}</div>
         </div>
         <div className="right"><img src={HomeImage} alt="" /></div>
       </div>

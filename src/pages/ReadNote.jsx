@@ -24,17 +24,17 @@ const ReadNote = () => {
 
     useEffect(() => {
         if (!Cookies.get('userTokenID')) {
-            navigate('/signup');
+            navigate('/uNotes-frontend/signup');
         }
         if (!noteID) {
-            navigate('/notes');
+            navigate('/uNotes-frontend/notes');
         } else {
             fetchNote();
         }
     }, [navigate, noteID]);
 
     const handleEdit = () => {
-        navigate('/notes/updatenote');
+        navigate('/uNotes-frontend/notes/updatenote');
     }
 
     const handleDelete = async (e) => {
@@ -44,13 +44,13 @@ const ReadNote = () => {
             alert(result.error);
         } else {
             alert(result.success);
-            navigate('/notes');
+            navigate('/uNotes-frontend/notes');
         }
     }
     
     return (
         <div className='add-note'>
-            <Link to='/notes' className='back-arrow'>&lsaquo; Notes</Link>
+            <Link to='/uNotes-frontend/notes' className='back-arrow'>&lsaquo; Notes</Link>
             <form method="post">
                 <Input id='title' type='text' label='Note Title' value={title} readOnly={true} />
                 <label htmlFor="body">Note Body</label>

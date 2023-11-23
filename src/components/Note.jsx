@@ -13,7 +13,7 @@ export default function Note(props) {
 
     const handleEditNote = (e) => {
         setNoteID(props.noteID);
-        navigate('/notes/updatenote');
+        navigate('/uNotes-frontend/notes/updatenote');
     }
 
     const handleDeleteNote = async (e) => {
@@ -29,7 +29,7 @@ export default function Note(props) {
 
     const handleNoteClick = () => {
         setNoteID(props.noteID);
-        navigate('/notes/note');
+        navigate('/uNotes-frontend/notes/note');
     }
     
     return (

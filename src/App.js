@@ -20,13 +20,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/signup' element={<Signup />} />
-          <Route exact path='/login' element={<Login />} />
-          <Route exact path='/notes' element={<Notes />} />
-          <Route exact path='/notes/note' element={<ReadNote />} />
-          <Route exact path='/notes/addnote' element={<AddNote />} />
-          <Route exact path='/notes/updatenote' element={<UpdateNote />} />
+          <Route exact path='uNotes-frontend/' element={<Home />} />
+          <Route exact path='uNotes-frontend/signup' element={<Signup />} />
+          <Route exact path='uNotes-frontend/login' element={<Login />} />
+          <Route exact path='uNotes-frontend/notes' element={<Notes />} />
+          <Route exact path='uNotes-frontend/notes/note' element={<ReadNote />} />
+          <Route exact path='uNotes-frontend/notes/addnote' element={<AddNote />} />
+          <Route exact path='uNotes-frontend/notes/updatenote' element={<UpdateNote />} />
           <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Router>

@@ -13,7 +13,7 @@ export default function Login() {
 
   useEffect(() => {
     if (Cookies.get('userTokenID')) {
-      navigate('/notes');
+      navigate('/uNotes-frontend/notes');
     }
   }, [navigate]);
 

@@ -15,7 +15,7 @@ export default function Signup() {
 
     useEffect(() => {
         if (Cookies.get('userTokenID')) {
-            navigate('/notes');
+            navigate('/uNotes-frontend/notes');
         }
     }, [navigate]);
 
@@ -54,7 +54,7 @@ export default function Signup() {
             setError(result.error);
         } else {
             alert(result.success);
-            window.location.assign('/login');
+            window.location.assign('/uNotes-frontend/login');
         }
     }
     
@@ -72,7 +72,7 @@ export default function Signup() {
                         <div className="error">{error}</div>
                         <div className="signup-btns">
                             <input type="submit" value="Sign Up Now" disabled={disable} />
-                            <Link to='/login' className='login-btn'>Get Login</Link>
+                            <Link to='/uNotes-frontend/login' className='login-btn'>Get Login</Link>
                         </div>
                     </form>
                 </div>

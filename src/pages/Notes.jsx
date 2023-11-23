@@ -16,7 +16,7 @@ export default function Notes() {
         if (Cookies.get('userTokenID')) {
             setUserID(Cookies.get('userTokenID'));
         } else {
-            navigate('/signup');
+            navigate('/uNotes-frontend/signup');
         }
     }, [navigate]);
 
@@ -50,7 +50,7 @@ export default function Notes() {
                         </div>
                 }
             </div>
-            <Link to='/notes/addnote'><img className='add-note-btn' src={addImage} alt="add note button" /></Link>
+            <Link to='/uNotes-frontend/notes/addnote'><img className='add-note-btn' src={addImage} alt="add note button" /></Link>
         </div>
     )
 }

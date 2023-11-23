@@ -24,10 +24,10 @@ const UpdateNote = () => {
     
     useEffect(() => {
         if (!Cookies.get('userTokenID')) {
-            navigate('/signup');
+            navigate('/uNotes-frontend/signup');
         }
         if (!noteID) {
-            navigate('/notes');
+            navigate('/uNotes-frontend/notes');
         } else {
             fetchNote();
         }
@@ -41,7 +41,7 @@ const UpdateNote = () => {
             alert(result.error);
         } else {
             alert(result.success);
-            navigate('/notes');
+            navigate('/uNotes-frontend/notes');
         }
     }
 
@@ -54,7 +54,7 @@ const UpdateNote = () => {
                 <textarea id='body' value={body} onChange={e => setBody(e.target.value)} required={true}></textarea>
                 <div className="buttons">
                     <input type="submit" value="Update Note" />
-                    <input type="button" value="Cancel" className='cancel-btn' onClick={() => navigate('/notes')} />
+                    <input type="button" value="Cancel" className='cancel-btn' onClick={() => navigate('/uNotes-frontend/notes')} />
                 </div>
             </form>
         </div>

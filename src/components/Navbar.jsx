@@ -20,10 +20,10 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className="nav-container">
-                <Link to='/' className="brand"><div>uNotes</div></Link>
+                <Link to='/uNotes-frontend/' className="brand"><div>uNotes</div></Link>
                 <ul className="nav-list">
-                    {!Cookie && <li><Link to='/signup' className="nav-link">Signup</Link></li>}
-                    {!Cookie && <li><Link to='/login' className="nav-link">Login</Link></li>}
+                    {!Cookie && <li><Link to='/uNotes-frontend/signup' className="nav-link">Signup</Link></li>}
+                    {!Cookie && <li><Link to='/uNotes-frontend/login' className="nav-link">Login</Link></li>}
                     {Cookie && <li><Link className="nav-link" onClick={logout}>LogOut</Link></li>}
                 </ul>
             </div>
