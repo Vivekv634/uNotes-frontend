@@ -20,6 +20,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route exact path='/' element={<Home />} />
           <Route exact path='/uNotes-frontend/' element={<Home />} />
           <Route exact path='/uNotes-frontend/signup' element={<Signup />} />
           <Route exact path='/uNotes-frontend/login' element={<Login />} />
