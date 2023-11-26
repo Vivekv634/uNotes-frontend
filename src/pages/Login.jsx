@@ -24,7 +24,7 @@ export default function Login() {
     if (result.error) {
       setError(result.error);
     } else {
-      Cookies.set('userTokenID', result.userToken);
+      Cookies.set('userTokenID', result.userToken, {expires: 7});
       window.location.reload();
     }
   }
